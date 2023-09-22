@@ -1,16 +1,22 @@
-# validcube_gh
+# `> validcube`
+nullcube's website mostly for portfolio and showing off my work.
 
-A new Flutter project.
+## `> validcube // Contributing`
 
-## Getting Started
+Thanks for consider contributing.
 
-This project is a starting point for a Flutter application.
+> [!IMPORTANT]  
+> This guide assume that you already installed Flutter and Chromium-based browser, please checkout [Flutter's get started guide](https://docs.flutter.dev/get-started/install).
 
-A few resources to get you started if this is your first Flutter project:
+Building the website:
+1. Clone the repository: `git@github.com:validcube/validcube.github.io.git`
+2. Checkout the `dev` branch: `git branch dev` && `git switch dev`
+3. Build `release` variant of the app: `flutter build web`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> [!NOTE]  
+> If you use `flutter run` you can do hot-reload/restart making development easy. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Here are some tip when contributing:
+* All commits must follows the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) guidelines.
+* [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are highly recommended.
+* Assets like picture or image are recommended to be converted to [`webp`](https://en.wikipedia.org/wiki/WebP) format.
