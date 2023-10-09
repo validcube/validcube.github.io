@@ -22,4 +22,4 @@ Here are some tip when contributing:
 * Assets like picture or image are recommended to be converted to [`webp`](https://en.wikipedia.org/wiki/WebP) format.
 
 ## `> validcube // License`
-This project uses [AGPLv3](/LICENSE) license.
+This project uses [Apache 2.0](/LICENSE) license.
