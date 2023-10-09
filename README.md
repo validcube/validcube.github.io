@@ -20,3 +20,6 @@ Here are some tip when contributing:
 * All commits must follows the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) guidelines.
 * [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are highly recommended.
 * Assets like picture or image are recommended to be converted to [`webp`](https://en.wikipedia.org/wiki/WebP) format.
+
+## `> validcube // License`
+This project uses [AGPLv3](/LICENSE) license.
