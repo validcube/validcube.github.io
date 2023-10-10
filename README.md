@@ -3,7 +3,7 @@ nullcube's website mostly for portfolio and showing off my work.
 
 ## `> validcube // Contributing`
 
-Thanks for consider contributing.
+Thanks for consider contributing, please read the [Code of Conduct](/CODE_OF_CONDUCT.md) if you haven't read it.
 
 > [!IMPORTANT]  
 > This guide assume that you already installed Flutter and Chromium-based browser, please checkout [Flutter's get started guide](https://docs.flutter.dev/get-started/install).
