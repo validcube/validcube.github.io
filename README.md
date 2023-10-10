@@ -20,3 +20,6 @@ Here are some tip when contributing:
 * All commits must follows the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) guidelines.
 * [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are highly recommended.
 * Assets like picture or image are recommended to be converted to [`webp`](https://en.wikipedia.org/wiki/WebP) format.
+
+## `> validcube // License`
+This personal website is licensed under [Apache 2.0](/LICENSE) license. [tl;dr (not legal advice)](https://www.tldrlegal.com/license/apache-license-2-0-apache-2-0) You can do what you like with the software, as long as you include the required notices. This permissive license contains a patent license from the contributors of the code.
