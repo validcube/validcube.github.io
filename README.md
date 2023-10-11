@@ -2,7 +2,6 @@
 nullcube's website mostly for portfolio and showing off my work.
 
 ## `> validcube // Contributing`
-
 Thanks for consider contributing, please read the [Code of Conduct](/CODE_OF_CONDUCT.md) if you haven't read it.
 
 > [!IMPORTANT]  
@@ -17,8 +16,8 @@ Building the website:
 > If you use `flutter run` you can do hot-reload/restart making development easy. 
 
 Here are some tip when contributing:
-* All commits must follows the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) guidelines.
-* [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are highly recommended.
+* When writing commit message, consider follows the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) guidelines unless it's self-explanatory.
+* [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are required.
 * Assets like picture or image are recommended to be converted to [`webp`](https://en.wikipedia.org/wiki/WebP) format.
 
 ## `> validcube // License`
