@@ -20,4 +20,5 @@ When reporting, please make sure to include
 the reproduce steps in clear and consise way as possible
 to prevent any mistake during communication.
 
-You'll receive an update when the reported vulnerability is accepted, declined or fixed.
+You'll receive an update when the reported vulnerability is 
+accepted, declined, fixed or requested for more information.
