@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Credits extends StatefulWidget {
+  const Credits({super.key});
 
   @override
-  State<Home> createState() => _Home();
+  State<Credits> createState() => _Credits();
 }
 
-class _Home extends State<Home> {
+class _Credits extends State<Credits> {
   int currentPageIndex = 0;
   double imageShadowOpacity = 0.1;
   double imageShadowElevation = 5.0;

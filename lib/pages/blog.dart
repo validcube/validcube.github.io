@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Blog extends StatefulWidget {
+  const Blog({super.key});
 
   @override
-  State<Home> createState() => _Home();
+  State<Blog> createState() => _Blog();
 }
 
-class _Home extends State<Home> {
+class _Blog extends State<Blog> {
   int currentPageIndex = 0;
   double imageShadowOpacity = 0.1;
   double imageShadowElevation = 5.0;
@@ -35,14 +35,13 @@ class _Home extends State<Home> {
     return Container(
       alignment: Alignment.center,
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
         appBar: AppBar(
           title: const Text('NullCube'),
         ),
         body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("Home")],
+            children: [Text("Project")],
           ),
         ),
       ),

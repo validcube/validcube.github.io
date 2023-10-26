@@ -17,17 +17,16 @@ jobs:
           os: [ ubuntu-latest ]
           app: [ web ]
 
-      name: Build
-      runs-on: ubuntu-latest
+      name: Building ${{ matrix.app }} on ${{ matrix.os }}
+      runs-on: ${{ matrix.os }}
       steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
-
-      - name: Get dependencies
-        run: flutter pub get
       
       - name: Build
-        run: flutter build web
+        run: | 
+          flutter pub get
+          flutter build ${{ matrix.app }}

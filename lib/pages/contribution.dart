@@ -25,7 +25,7 @@ class _Contribution extends State<Contribution> {
     String flowerImage;
     String decorateImage;
     String optionalImage;
-    if (aspectRatio >= 1.0) {
+    if (aspectRatio >= 51.0) {
       placeholderImage = 'assets/placeholder1.png'; // Landscape or Square
       personalImage = 'assets/placeholder1.png';
     } else {
@@ -35,13 +35,97 @@ class _Contribution extends State<Contribution> {
     return Container(
       alignment: Alignment.center,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('NullCube'),
-        ),
-        body: const Center(
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("Contribution")],
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              //Button
+              Card(
+                margin: const EdgeInsets.all(8.0),
+                elevation: 1,
+                child: Column(
+                  children: [
+                    // Image
+                    Image.asset(
+                      placeholderImage,
+                      width: imageSize * 12,
+                      height: imageSize * 3.5,
+                    ),
+                    // Text
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        'Contribution',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  Card(
+                    margin: const EdgeInsets.all(8.0),
+                    elevation: imageShadowElevation,
+                    shadowColor: Colors.black.withOpacity(imageShadowOpacity),
+                    child: Column(
+                      children: [
+                        // Image
+                        Image.asset(
+                          placeholderImage,
+                          width: imageSize,
+                          height: imageSize,
+                        ),
+                        // Text
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            'Contribution',
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Card(
+                    margin: const EdgeInsets.all(8.0),
+                    elevation: imageShadowElevation,
+                    shadowColor: Colors.black.withOpacity(imageShadowOpacity),
+                    child: Column(
+                      children: [
+                        // Image
+                        Image.asset(
+                          placeholderImage,
+                          width: imageSize,
+                          height: imageSize,
+                        ),
+                        // Text
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            'Contribution',
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ],
           ),
         ),
       ),
