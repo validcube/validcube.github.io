@@ -1,7 +1,17 @@
-name: Build
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow lets you generate SLSA provenance file for your project.
+# The generation satisfies level 3 for the provenance requirements - see https://slsa.dev/spec/v0.1/requirements
+# The project is an initiative of the OpenSSF (openssf.org) and is developed at
+# https://github.com/slsa-framework/slsa-github-generator.
+# The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
+# For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
+
+name: SLSA generic generator
 on:
-  push:
-  pull_request:
   workflow_dispatch:
   release:
     types: [created]
@@ -23,7 +33,6 @@ jobs:
         run: | 
           flutter pub get
           flutter build web --release
-          
       - name: Build artifacts
         run: |
             echo "build/web/*" > artifact1
@@ -37,11 +46,6 @@ jobs:
           files=$(ls artifact*)
           # Generate the subjects (base64 encoded).
           echo "hashes=$(sha256sum $files | base64 -w0)" >> "${GITHUB_OUTPUT}"
-          
-      - uses: actions/upload-artifact@v4
-        with:
-          name: web
-          path: build/web
 
   provenance:
     needs: [build]
@@ -49,6 +53,7 @@ jobs:
       actions: read
       id-token: write
       contents: write
-    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.9.0
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.4.0
     with:
       base64-subjects: "${{ needs.build.outputs.digests }}"
+      upload-assets: true # Optional: Upload to a new release
